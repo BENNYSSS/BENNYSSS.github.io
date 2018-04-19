@@ -1,0 +1,356 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Benney's</title>
+      <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+
+    <!-- Stylesheet -->
+    <link href="//cdn.shopify.com/s/files/1/1775/8583/t/1/assets/startup-materialize.min.css?1270146460341745353" rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="shortcut icon" type="image/x-icon" href="http://igniteit.win/favicon.ico">
+
+    <meta id="shopify-digital-wallet" name="shopify-digital-wallet" content="/17758583/digital_wallets/dialog">
+<meta name="shopify-checkout-api-token" content="6aacc581eb2b41d74f03c38d3c985dba">
+<meta id="in-context-paypal-metadata" data-shop-id="17758583" data-environment="production" data-locale="en_US" data-paypal-v4="true">
+<style media="all">.additional-checkout-button{border:0 !important;border-radius:5px !important;display:inline-block;margin:0 0 10px;padding:0 24px !important;max-width:100%;min-width:150px !important;line-height:44px !important;text-align:center !important}.additional-checkout-button+.additional-checkout-button{margin-left:10px}.additional-checkout-button:last-child{margin-bottom:0}.additional-checkout-button span{font-size:14px !important}.additional-checkout-button img{display:inline-block !important;height:1.3em !important;margin:0 !important;vertical-align:middle !important;width:auto !important}@media (max-width: 500px){.additional-checkout-button{display:block;margin-left:0 !important;padding:0 10px !important;width:100%}}.additional-checkout-button--apple-pay{background-color:#000 !important;color:#fff !important;display:none;font-family:-apple-system, &#39;Helvetica Neue&#39;, sans-serif !important;min-width:150px !important;white-space:nowrap !important}.additional-checkout-button--apple-pay:hover,.additional-checkout-button--apple-pay:active,.additional-checkout-button--apple-pay:visited{color:#fff !important;text-decoration:none !important}.additional-checkout-button--apple-pay .additional-checkout-button__logo{background:-webkit-named-image(apple-pay-logo-white) center center no-repeat !important;background-size:auto 100% !important;display:inline-block !important;vertical-align:middle !important;width:3em !important;height:1.3em !important}@media (max-width: 500px){.additional-checkout-button--apple-pay{display:none}}.additional-checkout-button--google-pay{line-height:0 !important;padding:0 !important;border-radius:unset !important;width:80px !important}@media (max-width: 500px){.additional-checkout-button--google-pay{width:100% !important}}.gpay-iframe{height:44px !important;width:100%  !important;cursor:pointer;vertical-align:middle !important}.additional-checkout-button--paypal-express{background-color:#ffc439 !important}.additional-checkout-button--paypal{vertical-align:top;line-height:0 !important;padding:0 !important}.additional-checkout-button--amazon{background-color:#fad676 !important;position:relative !important}.additional-checkout-button--amazon .additional-checkout-button__logo{-webkit-transform:translateY(4px) !important;transform:translateY(4px) !important}.additional-checkout-button--amazon .alt-payment-list-amazon-button-image{max-height:none !important;opacity:0 !important;position:absolute !important;top:0 !important;left:0 !important;width:100% !important;height:100% !important}.additional-checkout-button-visually-hidden{border:0 !important;clip:rect(0, 0, 0, 0) !important;clip:rect(0 0 0 0) !important;width:1px !important;height:1px !important;margin:-2px !important;overflow:hidden !important;padding:0 !important;position:absolute !important}
+</style>
+<style>.shopify-payment-button__button--hidden {
+  visibility: hidden;
+}
+
+.shopify-payment-button__button {
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0 0 0 0 transparent;
+  color: white;
+  cursor: pointer;
+  display: block;
+  font-size: 1em;
+  font-weight: 500;
+  line-height: 1;
+  text-align: center;
+  width: 100%;
+  transition: background 0.2s ease-in-out;
+}
+
+.shopify-payment-button__button[disabled] {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.shopify-payment-button__button--unbranded {
+  background-color: #1990c6;
+  padding: 1em 2em;
+}
+
+.shopify-payment-button__button--unbranded:hover:not([disabled]) {
+  background-color: #136f99;
+}
+
+.shopify-payment-button__more-options {
+  background: transparent;
+  border: 0 none;
+  cursor: pointer;
+  display: block;
+  font-size: 1em;
+  margin-top: 1em;
+  text-align: center;
+  width: 100%;
+}
+
+.shopify-payment-button__more-options:hover:not([disabled]) {
+  text-decoration: underline;
+}
+
+.shopify-payment-button__more-options[disabled] {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.shopify-payment-button__button--branded {
+  display: flex;
+  flex-direction: column;
+  min-height: 44px;
+  position: relative;
+  z-index: 1;
+}
+
+.shopify-payment-button__button--branded .shopify-cleanslate {
+  flex: 1 !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+</style>
+<script id="apple-pay-shop-capabilities" type="application/json">{"shopId":17758583,"countryCode":"US","currencyCode":"USD","merchantCapabilities":["supports3DS"],"merchantId":"gid:\/\/shopify\/Shop\/17758583","merchantName":"Materialize Themes","requiredBillingContactFields":["postalAddress","email"],"requiredShippingContactFields":["postalAddress","email"],"shippingType":"shipping","supportedNetworks":["visa","masterCard","amex","discover"],"total":{"type":"pending","label":"Materialize Themes","amount":"1.00"}}</script>
+<script id="shopify-features" type="application/json">{"accessToken":"6aacc581eb2b41d74f03c38d3c985dba","betas":["smart-payment-buttons"],"domain":"themes.materializecss.com","shopId":17758583,"smart_payment_buttons_url":"https:\/\/cdn.shopifycloud.com\/payment-sheet\/assets\/latest\/spb.js"}</script>
+<script>var Shopify = Shopify || {};
+Shopify.shop = "materialize-themes.myshopify.com";
+Shopify.theme = {"name":"debut","id":133945025,"theme_store_id":796,"role":"main"};
+Shopify.theme.handle = "null";
+Shopify.theme.style = {"id":null,"handle":null};
+</script>
+<script id="__st">var __st={"a":17758583,"offset":-25200,"reqid":"0ffc3d8f-e47f-40d5-8f5c-28c67806d94d","pageurl":"themes.materializecss.com\/pages\/startup-zoom-out.html","s":"pages-203809409","u":"22758ef34c2b","p":"page","rtyp":"page","rid":203809409};</script>
+<script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
+<script>window.Shopify = window.Shopify || {};
+window.Shopify.Checkout = window.Shopify.Checkout || {};
+window.Shopify.Checkout.apiHost = "materialize-themes.myshopify.com";
+window.ShopifyPay = window.ShopifyPay || {};
+window.ShopifyPay.acceleratedFlowIncontext = false;
+window.ShopifyPay.apiHost = "pay.shopify.com";
+window.ShopifyPay.apiToken = "ZHV2MG93SmRSWUxaTXd1bGNxSE8vcjVmdTM5MXZVSzlnWEk4dmRNTVlqQmR5MEFSZjJ1SkFuRG51aytWdkpITC0tcno4NWdXY3JJMUdqTk9JNmpManVMZz09--4ab4cdaa5db0479c970fddb9cca8a17e4e41d2b3";
+window.ShopifyPay.requestHost = "themes.materializecss.com"
+window.ShopifyPay.sheetStyleSheetUrl = "\/\/cdn.shopify.com\/s\/assets\/shared\/sheet\/main-c150bd783aa9b2c6b0c41ded3880c45a0848a9914354d4222628be6c924200a3.css";
+</script>
+<script>
+      window.ShopifyAnalytics = window.ShopifyAnalytics || {};
+      window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};
+      window.ShopifyAnalytics.meta.currency = 'USD';
+      var meta = {"page":{"pageType":"page","resourceType":"page","resourceId":203809409}};
+      for (var attr in meta) {
+        window.ShopifyAnalytics.meta[attr] = meta[attr];
+      }
+    </script>
+<script>window.ShopifyAnalytics.merchantGoogleAnalytics = function() {
+  
+};
+</script>
+<script class="analytics">(window.gaDevIds=window.gaDevIds||[]).push('BwiEti');
+
+
+(function () {
+  var customDocumentWrite = function(content) {
+    var jquery = null;
+
+    if (window.jQuery) {
+      jquery = window.jQuery;
+    } else if (window.Checkout && window.Checkout.$) {
+      jquery = window.Checkout.$;
+    }
+
+    if (jquery) {
+      jquery('body').append(content);
+    }
+  };
+
+  var trekkie = window.ShopifyAnalytics.lib = window.trekkie = window.trekkie || [];
+  if (trekkie.integrations) {
+    return;
+  }
+  trekkie.methods = [
+    'identify',
+    'page',
+    'ready',
+    'track',
+    'trackForm',
+    'trackLink'
+  ];
+  trekkie.factory = function(method) {
+    return function() {
+      var args = Array.prototype.slice.call(arguments);
+      args.unshift(method);
+      trekkie.push(args);
+      return trekkie;
+    };
+  };
+  for (var i = 0; i < trekkie.methods.length; i++) {
+    var key = trekkie.methods[i];
+    trekkie[key] = trekkie.factory(key);
+  }
+  trekkie.load = function(config) {
+    trekkie.config = config;
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.onerror = function(e) {
+      (new Image()).src = '//v.shopify.com/internal_errors/track?error=trekkie_load';
+    };
+    script.async = true;
+    script.src = 'https://cdn.shopify.com/s/javascripts/tricorder/trekkie.storefront.min.js?v=2017.09.05.1';
+    var first = document.getElementsByTagName('script')[0];
+    first.parentNode.insertBefore(script, first);
+  };
+  trekkie.load(
+    {"Trekkie":{"appName":"storefront","development":false,"defaultAttributes":{"shopId":17758583,"isMerchantRequest":null,"themeId":133945025,"themeCityHash":5620039805005806551}},"Performance":{"navigationTimingApiMeasurementsEnabled":true,"navigationTimingApiMeasurementsSampleRate":1.0},"Google Analytics":{"trackingId":"UA-56218128-1","domain":"auto","siteSpeedSampleRate":"10","enhancedEcommerce":true,"doubleClick":true,"includeSearch":true},"Session Attribution":{}}
+  );
+
+  var loaded = false;
+  trekkie.ready(function() {
+    if (loaded) return;
+    loaded = true;
+
+    window.ShopifyAnalytics.lib = window.trekkie;
+    
+      ga('require', 'linker');
+      function addListener(element, type, callback) {
+        if (element.addEventListener) {
+          element.addEventListener(type, callback);
+        }
+        else if (element.attachEvent) {
+          element.attachEvent('on' + type, callback);
+        }
+      }
+      function decorate(event) {
+        event = event || window.event;
+        var target = event.target || event.srcElement;
+        if (target && (target.getAttribute('action') || target.getAttribute('href'))) {
+          ga(function (tracker) {
+            var linkerParam = tracker.get('linkerParam');
+            document.cookie = '_shopify_ga=' + linkerParam + '; ' + 'path=/';
+          });
+        }
+      }
+      addListener(window, 'load', function(){
+        for (var i=0; i < document.forms.length; i++) {
+          var action = document.forms[i].getAttribute('action');
+          if(action && action.indexOf('/cart') >= 0) {
+            addListener(document.forms[i], 'submit', decorate);
+          }
+        }
+        for (var i=0; i < document.links.length; i++) {
+          var href = document.links[i].getAttribute('href');
+          if(href && href.indexOf('/checkout') >= 0) {
+            addListener(document.links[i], 'click', decorate);
+          }
+        }
+      });
+    
+
+    var originalDocumentWrite = document.write;
+    document.write = customDocumentWrite;
+    try { window.ShopifyAnalytics.merchantGoogleAnalytics.call(this); } catch(error) {};
+    document.write = originalDocumentWrite;
+
+    
+        window.ShopifyAnalytics.lib.page(
+          null,
+          {"pageType":"page","resourceType":"page","resourceId":203809409}
+        );
+      
+    
+  });
+
+  
+      var eventsListenerScript = document.createElement('script');
+      eventsListenerScript.async = true;
+      eventsListenerScript.src = "//cdn.shopify.com/s/assets/shop_events_listener-f2c5800305098f0ebebdfa7d980c9abf56514c46d5305e97a7c476f7c9116163.js";
+      document.getElementsByTagName('head')[0].appendChild(eventsListenerScript);
+    
+})();
+</script>
+<script defer="defer" integrity="sha256-8JY3BfNY+qE/N2XV/d0SDbPXYUPhpVG0qDZb3yfjGTQ=" crossorigin="anonymous" src="//cdn.shopify.com/s/assets/storefront/express_buttons-f0963705f358faa13f3765d5fddd120db3d76143e1a551b4a8365bdf27e31934.js"></script>
+<script defer="defer" integrity="sha256-2VwcaH5++f6tBn1FlAz0S70S91W72Fx5p4AyR2ay1zw=" crossorigin="anonymous" src="//cdn.shopify.com/s/assets/storefront/features-d95c1c687e7ef9fead067d45940cf44bbd12f755bbd85c79a780324766b2d73c.js"></script>
+<script defer="defer" src="//cdn.shopify.com/s/assets/themes_support/ga_urchin_forms-68ca1924c495cfc55dac65f4853e0c9a395387ffedc8fe58e0f2e677f95d7f23.js"></script>
+
+  <link rel="canonical" href="https://themes.materializecss.com/pages/startup-zoom-out.html">
+</head>
+
+  <body>
+
+    <!-- Navbar -->
+    
+
+        
+        <a href="#" data-activates="slide-out" class="button-collapse ag"><i class="material-icons white-text">menu</i></a>
+      </div>
+    </nav>
+   
+    <div class="gn ai full-height">
+      <div class="header-wrapper c valign-wrapper">
+        <div class="d jt offset-s2 ci">
+          <h1>Benny's!</h1>
+          <span class="dx">Better Than Denny's</span>
+            <span class="dx">Mission: WE STRIVE TO HAVE WAFFLES BETTER THAN DENNY’S, AS LONG AS WE’RE BETTER THAN DENNY’S, WE’RE GOOD</span>
+          <button class="read-more"><i class="icon-caret-down"></i></button>
+        </div>
+      </div>
+      <div class="laptop-preview-sizer">
+        <div class="laptop-preview"></div>
+        <div class="image-container et" style="background-image:url(//cdn.shopify.com/s/files/1/1775/8583/t/1/assets/poly5.jpg?1270146460341745353)"></div>
+      </div>
+    </div>
+
+    <!-- Features -->
+    <div class="v valign-wrapper">
+      <div class="dv">
+        <div class="c">
+          <div class="d iv"><h2 class="section-title">Hiring Now!</h2></div>
+          <div class="d iv jo kk">
+            <h4><i class="icon-light-bulb"></i></h4>
+            <p class="ek">Manager- Planning, Monitoring, and appraising job results; Coaching, counseling and disciplining employees; Developing, Coordinating, and enforcing systems, policies, procedures, and productivity standards</p>
+          </div>
+          <div class="d iv jo kk">
+            <h4><i class="icon-bolt"></i></h4>
+            <p class="ek">Waiters - Take orders and serve food and beverages to patrons at tables in dining establishment. Check with customers to ensure that they are enjoying their meals and take action to correct any problems</p>
+          </div>
+          <div class="d iv jo kk">
+            <h4><i class="icon-rocket"></i></h4>
+            <p class="ek">Assistant Manager - Important in ensuring the sales team meets its goals of efficiency and customer satisfaction. Assistant Manager responsibilities include hiring and training sales associates, monitoring inventory and ordering merchandise based on demand</p>
+          </div>
+          <div class="d iv jo kk">
+            <h4><i class="icon-settings"></i></h4>
+            <p class="ek">Hosts - Responsible for greeting guest at the door. The host/hostess seats and presents clean menus to guests in a friendly, professional and quick manner</p>
+          </div>
+          <div class="d iv jo kk">
+            <h4><i class="icon-umbrella"></i></h4>
+            <p class="ek">Waffle Weaver - Team member job duties include operating a cash register, running the drive-thru, cooking menu items, cleaning the restaurant, and completing other assigned tasks</p>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<br>
+<br>
+
+    <!-- Pricing Tables -->
+    
+
+    <!-- Footer -->
+    <footer class="page-footer">
+      <div class="dv">
+        <div class="c">
+          <div class="d ka ko">
+            <img class="materialize-logo" src="//cdn.shopify.com/s/files/1/1775/8583/t/1/assets/materialize-teal.png?1270146460341745353" alt="">
+            <p>Made with love by Materialize.</p>
+          </div>
+          <div class="d ka ko">
+            <h5>About</h5>
+            <ul>
+              <li><a href="#!">Blog</a></li>
+              <li><a href="#!">Pricing</a></li>
+              <li><a href="#!">Docs</a></li>
+            </ul>
+          </div>
+          <div class="d ka ko">
+            <h5>Connect</h5>
+            <ul>
+              <li><a href="#!">Community</a></li>
+              <li><a href="#!">Subscribe</a></li>
+              <li><a href="#!">Email</a></li>
+            </ul>
+          </div>
+          <div class="d ka ko">
+            <h5>Contact</h5>
+            <ul>
+              <li><a href="#!">Twitter</a></li>
+              <li><a href="#!">Facebook</a></li>
+              <li><a href="#!">Github</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/materialize/0.98.2/js/materialize.min.js"></script>
+    <script src="//cdn.shopify.com/s/files/1/1775/8583/t/1/assets/startup-all-min.js?1270146460341745353" crossorigin="anonymous"></script>
+
+  </body>
+</html>
